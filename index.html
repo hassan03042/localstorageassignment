@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1 style="text-align: center; text-decoration: underline; text-decoration-color: bisque;">LOCAL STORAGE</h1>
+
+    <div id="login_container" style="display: grid; place-items: center;">
+
+        <div class="form-box">
+            <div class="form">
+                <span class="title">Sign up</span>
+                <span class="subtitle">Create a free account with your email.</span>
+                <div class="form-container">
+                    <input type="text" id="fullName" class="input" placeholder="Your Name">
+                    <input type="email" id="email" class="input" placeholder="Email">
+                    <input type="password" id="password" class="input" placeholder="Password">
+                </div>
+                <button onclick="loginuser()">Sign up</button>
+            </div>
+            <div class="form-section">
+                <p>Have an account? <a href="">Log in</a> </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="home_container">
+        <div class="container" style="display: grid; place-items: center;">
+            <h1>Hello <span id="user_email"></span> </h1>
+            <!-- <span>
+
+                <button onclick="logout()" class="btntwo">Logout</button>
+
+            </span> -->
+
+            <div id="logout_container">
+                <button onclick="logout()" class="btntwo">Logout</button>
+            </div>
+           
+            <div>
+              <select name="" id="subject" style="width: 150px; height: 30px;">
+                <option value="Study" selected style="text-align: center;">Study</option>
+                <option value="Fun" style="text-align: center;">Fun</option>
+                <option value="Food" style="text-align: center;">Food</option>
+                <option value="Weekend" style="text-align: center;">Weekend</option>
+              </select>
+            </div>
+
+
+            <div>
+                <textarea style="margin-top: 2%; height: 70px; width: 700px;" name="" id="note" cols="60">ADD YOUR NOTES HERE</textarea>
+                <div class="btn-container">
+                    <button onclick="submitnote()" class="btnthree">Save</button>
+                </div>
+
+                <ul id="list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
